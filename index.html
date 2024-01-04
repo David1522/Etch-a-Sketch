@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,28 @@
 </head>
 
 <body>
-  
+  <header>
+    <h1 class="app-title">Etch-a-Sketch</h1>
+  </header>
+
+  <main>
+    <div class="sketch-container">
+      <div class="canvas-container">
+        <div class="canvas"></div>
+      </div>
+
+      <div class="tools-container">
+        <div class="tools">
+          <input type="color" id="color-picker" title="color" value="#da291c">
+          <button type="button" class="tool-btn">Random Mode</button>
+          <button type="button"  class="tool-btn">Eraser</button>
+          <button type="button"  class="tool-btn">Clear</button>
+          <label for="grid-input-elm">XxX</label>
+          <input type="range" id="grid-input-elm" min="2" max="64">
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 
 <script src="./JS/main.js" ></script>
