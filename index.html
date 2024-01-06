@@ -16,17 +16,20 @@
   <main>
     <div class="sketch-container">
       <div class="canvas-container">
-        <div class="canvas"></div>
+        <div id="canvas"></div>
       </div>
 
       <div class="tools-container">
         <div class="tools">
           <input type="color" id="color-picker" title="color" value="#da291c">
-          <button type="button" class="tool-btn">Random Mode</button>
-          <button type="button"  class="tool-btn">Eraser</button>
-          <button type="button"  class="tool-btn">Clear</button>
-          <label for="grid-input-elm">XxX</label>
-          <input type="range" id="grid-input-elm" min="2" max="64">
+          <button type="button" class="tool-btn color-btn btn-selected" id="color-md-btn">Color Mode</button>
+          <button type="button" class="tool-btn color-btn" id="random-btn">Random Mode</button>
+          <button type="button" class="tool-btn color-btn" id="eraser-btn">Eraser</button>
+          <button type="button" class="tool-btn" id="clear-btn">Clear</button>
+          <label class="label-style" for="grid-input-elm">
+            <span class="canvas-size-label">2</span> X <span class="canvas-size-label">2</span>
+          </label>
+          <input type="range" id="grid-input-elm" min="2" max="15" value="2">
         </div>
       </div>
     </div>

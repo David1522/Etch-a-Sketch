@@ -38,17 +38,18 @@ header .app-title {
   align-items: center;
 }
 
-.canvas {
+#canvas {
   background-color: white;
   width: 500px;
   height: 500px;
   box-shadow: 0px 0px 15px 1px black;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .tools-container {
   width: 100%;
   padding: 25px;
-  /* background-color: aqua; */
 }
 
 .tools {
@@ -92,6 +93,16 @@ header .app-title {
   cursor: pointer;
 }
 
+.btn-selected {
+  background-color: #da291c;
+  color: #fff;
+}
+
+.label-style {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
 #grid-input-elm {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -103,6 +114,7 @@ header .app-title {
   outline: none;
   border-radius: 15px;
   border: 1px solid;
+  margin-top: 5px;
   overflow: hidden;
   cursor: pointer;
 }
